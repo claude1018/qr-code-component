@@ -1,0 +1,56 @@
+$white: hsl(0, 0%, 100%)
+$light-gray: hsl(212, 45%, 89%)
+$grayish-blue: hsl(220, 15%, 55%)
+$dark-blue: hsl(218, 44%, 22%)
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+html
+  font-size: 16px
+  font-family: 'Outfit', sans-serif
+
+body
+  min-height: 100vh  
+
+main
+  background: $light-gray
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+section.qr-card
+  border-radius: 1.125rem
+  padding: 1rem
+  background: $white
+  margin: 0 1rem
+  width: min(100%, 20.9375rem)
+
+  figure img
+    max-width: 100%
+    height: auto
+    border-radius: 0.75rem
+  
+  .wrapper
+    text-align: center
+    padding: 1.8125rem 0.875rem
+    h1
+      color: $dark-blue
+      font-size: 1.5rem
+      margin-bottom: 1.25rem
+    p
+      color: $grayish-blue
+      font-size: 0.9375rem
+
+footer
+  text-align: center
+  background: $light-gray
+  padding: 0.5rem
+  .attribution
+    color: $dark-blue
+    font-size: clamp(0.625rem, 1.5vw + 0.5rem, 0.95rem)
+    a
+      color: $grayish-blue
